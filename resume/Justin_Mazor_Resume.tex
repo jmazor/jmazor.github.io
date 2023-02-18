@@ -4,6 +4,9 @@
 \usepackage{fancyhdr} % for custom headers and footers
 \usepackage{enumitem} % for customizing lists
 \usepackage{hyperref} % for adding hyperlinks
+\usepackage{changepage}
+\usepackage{multicol}
+
 \hypersetup{
   pdfauthor={Justin Mazor},
   pdftitle={Justin Mazor's Resume},
@@ -50,9 +53,23 @@
     \item College of Engineering and Computer Science
     \item Dean's List Honors: Spring 2021 - Summer 2022
     \item President's Honor Role: Fall 2022
-    \item Expected Graduation: Fall 2023 with a Bachelor of Science in Computer Science
-  \end{itemize}} \\
+    \item Expected Graduation: Fall 2023 with a Bachelor of Science
+
+  \end{itemize}}\vspace{-\topsep}
 \end{tabular}
+\textit{Relevant Coursework:}
+\vspace{-\topsep} \begin{multicols}{2}
+  \begin{itemize}[noitemsep, topsep=0pt]
+  \item Computer Science II 
+  \item Analysis of Computer Communication Networks
+  \item Algorithms for Machine Learning
+  \item Database Systems
+  \item Object-Oriented Software Development
+  \item Computer Logic and Organization
+  \item Discrete Structures
+  \item Programming Languages
+  \end{itemize}
+\end{multicols}
 
 \noindent
 \begin{tabular}{@{} >{\raggedright\arraybackslash}p{0.7\textwidth} 
@@ -126,10 +143,32 @@
 \end{center}
 
 \noindent
-\textbf{Programming Experience:} \\
-Java, C (3+ years) \textbar\ Bash (2+ years) \textbar\ C++, Python, SQL (1 year) \textbar\ TypeScript, JavaScript, Haskell, Go (6 months) \\
-\textbf{Relevant Coursework:} \\
-Computer Science II, Analysis of Computer Communication Networks, Algorithms for Machine Learning, Database Systems, Processes for Object-Oriented Software Development, Discrete Structures, Programming Languages
+\vspace{-\topsep}
+\textbf{Programming Experience:}
+\begin{center}
+  \begin{tabular}{@{}p{0.2\textwidth}p{0.2\textwidth}p{0.2\textwidth}p{0.2\textwidth}@{}}
+  3+ years: & 2+ years: & 1 year: & 6 months: \\
+  \vspace{-\topsep} \begin{itemize}[noitemsep,topsep=0pt,leftmargin=5mm]
+  \item Java
+  \item C
+  \end{itemize}
+  &
+  \vspace{-\topsep} \begin{itemize}[noitemsep,topsep=0pt, leftmargin=5mm]
+  \item Bash
+  \end{itemize}
+  &
+  \vspace{-\topsep} \begin{itemize}[noitemsep,topsep=0pt, leftmargin=5mm]
+  \item C++
+  \item SQL
+    
+  \end{itemize}
+  &
+  \vspace{-\topsep} \begin{itemize}[noitemsep,topsep=0pt, leftmargin=5mm]
+  \item JavaScript
+  \item Haskell
+  \end{itemize}
+\end{tabular}
+\end{center}
 
 \begin{center}
   Linux System Administrator (Red Hat/Debian/Gentoo), Algorithm Analysis and Design
