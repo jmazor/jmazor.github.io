@@ -1,35 +1,77 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Justin Mazor's Personal Page</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mazor.sh</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
     <style>
-      @font-face {
-          font-family: Ubuntu-mono;
-          src: url(UbuntuMono-Regular.ttf);
-      }
-      body {
-          font-size: 100%;
-      }
-      p {
-          font-family: Ubuntu-mono;
-          font-size: 2.5em;
-      }
-      h1 {
-          font-family: Ubuntu-mono;
-          font-size: 6em;
-      }
+        @font-face {
+            font-family: 'Ubuntu Mono';
+            src: url('UbuntuMono-Regular.ttf');
+        }
+        body {
+            font-family: 'Ubuntu Mono', monospace;
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #252525;
+            padding: 15px;
+            border-bottom: 2px solid #3a3a3a;
+        }
+        nav a {
+            color: #00ff99;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #2a2a2a;
+            display: inline-block;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            border-top: 2px solid #3a3a3a;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #3a3a3a;
+            margin: 20px 0;
+        }
     </style>
-  </head>
-  <body>
-    <h1>Hello, World!</h1>
-    <p>Construction in progress...</p>
-    <p>In the meantime follow me on <a rel="me" href="https://hachyderm.io/@mazor">Mastodon</a> or <a rel="me" href="https://github.com/jmazor">Github</a>
-    <p><a href="./resume/Justin_Mazor_Resume.pdf">Resume</a><p>
-    <p> Contact me: 
-    <br>
-    <a href = "mailto:jh@mazor.sh">jh@mazor.sh</a>
-    <br>
-    <a href="mazorpubkey.asc">PGP Key</a>
-    </p>
-  </body>   
+</head>
+<body>
+    <header>
+        <h1>Mazor.sh</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Welcome</h2>
+        <hr>
+        <p>Construction in progress... This is my space on the web.</p>
+        <p>Check out my <a href="resume/Justin_Mazor_Resume.pdf" style="color: #00ff99;">Resume</a> or visit my <a href="https://github.com/jmazor" style="color: #00ff99;">GitHub</a>.</p>
+    </section>
+    
+    <footer>
+        <hr>
+        <p>Contact: <a href="mailto:jh@mazor.sh" style="color: #00ff99;">jh@mazor.sh</a> | <a href="mazorpubkey.asc" style="color: #00ff99;">PGP Key</a></p>
+    </footer>
+</body>
 </html>
